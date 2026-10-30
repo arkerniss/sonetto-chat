@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000012C00000000000001 /* AIChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000112C00000000000001 /* AIChatAppApp.swift */; };
+		1A0000022C00000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000122C00000000000001 /* ContentView.swift */; };
+		1A0000032C00000000000001 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000132C00000000000001 /* ChatMessage.swift */; };
+		1A0000042C00000000000001 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000142C00000000000001 /* SettingsStore.swift */; };
+		1A0000052C00000000000001 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000152C00000000000001 /* KeychainStore.swift */; };
+		1A0000062C00000000000001 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000162C00000000000001 /* OpenAIClient.swift */; };
+		1A0000072C00000000000001 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000172C00000000000001 /* ChatViewModel.swift */; };
+		1A0000082C00000000000001 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000182C00000000000001 /* ChatView.swift */; };
+		1A0000092C00000000000001 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000192C00000000000001 /* MessageBubble.swift */; };
+		1A00000A2C00000000000099 /* MessageEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001A2C00000000000099 /* MessageEditSheet.swift */; };
+		1A00000A2C00000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001A2C00000000000001 /* SettingsView.swift */; };
+		1A00000B2C00000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A00001B2C00000000000001 /* Assets.xcassets */; };
+		1A00000C2C00000000000001 /* AttachmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001D2C00000000000001 /* AttachmentStore.swift */; };
+		1A00000D2C00000000000001 /* AttachmentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001E2C00000000000001 /* AttachmentPreview.swift */; };
+		1A00000E2C00000000000001 /* LiquidGlassChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001F2C00000000000001 /* LiquidGlassChrome.swift */; };
+		1A00000F2C00000000000001 /* RenderCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000232C00000000000001 /* RenderCache.swift */; };
+		1A0000A12C00000000000001 /* MarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B12C00000000000001 /* MarkdownParser.swift */; };
+		1A0000A22C00000000000001 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B22C00000000000001 /* MarkdownView.swift */; };
+		1A0000A32C00000000000001 /* MessageShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B32C00000000000001 /* MessageShareCard.swift */; };
+		1A0000A42C00000000000001 /* WebDAVClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B42C00000000000001 /* WebDAVClient.swift */; };
+		1A0000A52C00000000000001 /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B52C00000000000001 /* BackupService.swift */; };
+		1A0000A62C00000000000001 /* BackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B62C00000000000001 /* BackupView.swift */; };
+		1A0000A72C00000000000001 /* StorageUsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B72C00000000000001 /* StorageUsageService.swift */; };
+		1A0000A82C00000000000001 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000B82C00000000000001 /* StorageView.swift */; };
+		1A0000C12C00000000000001 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D12C00000000000001 /* Assistant.swift */; };
+		1A0000C22C00000000000001 /* AssistantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D22C00000000000001 /* AssistantStore.swift */; };
+		1A0000C32C00000000000001 /* AssistantImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D32C00000000000001 /* AssistantImageStore.swift */; };
+		1A0000C42C00000000000001 /* PromptKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D42C00000000000001 /* PromptKit.swift */; };
+		1A0000C52C00000000000001 /* AssistantAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D52C00000000000001 /* AssistantAvatarView.swift */; };
+		1A0000C62C00000000000001 /* AssistantPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D62C00000000000001 /* AssistantPickerSheet.swift */; };
+		1A0000C72C00000000000001 /* AssistantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D72C00000000000001 /* AssistantListView.swift */; };
+		1A0000C82C00000000000001 /* AssistantEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D82C00000000000001 /* AssistantEditView.swift */; };
+		1A0000C92C00000000000001 /* AssistantBasicTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000D92C00000000000001 /* AssistantBasicTab.swift */; };
+		1A0000CA2C00000000000001 /* AssistantPickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DA2C00000000000001 /* AssistantPickers.swift */; };
+		1A0000CB2C00000000000001 /* AssistantPromptTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DB2C00000000000001 /* AssistantPromptTab.swift */; };
+		1A0000CC2C00000000000001 /* FlowWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DC2C00000000000001 /* FlowWrap.swift */; };
+		1A0000CD2C00000000000001 /* AssistantMemoryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DD2C00000000000001 /* AssistantMemoryTab.swift */; };
+		1A0000CE2C00000000000001 /* AssistantRegexTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DE2C00000000000001 /* AssistantRegexTab.swift */; };
+		1A0000CF2C00000000000001 /* AssistantQuickPhraseTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000DF2C00000000000001 /* AssistantQuickPhraseTab.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0000102C00000000000001 /* Sonetto Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonetto Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000112C00000000000001 /* AIChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatAppApp.swift; sourceTree = "<group>"; };
+		1A0000122C00000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0000132C00000000000001 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		1A0000142C00000000000001 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		1A0000152C00000000000001 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		1A0000162C00000000000001 /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
+		1A0000172C00000000000001 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		1A0000182C00000000000001 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		1A0000192C00000000000001 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		1A00001A2C00000000000099 /* MessageEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEditSheet.swift; sourceTree = "<group>"; };
+		1A00001A2C00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A00001B2C00000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A00001C2C00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A00001D2C00000000000001 /* AttachmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentStore.swift; sourceTree = "<group>"; };
+		1A00001E2C00000000000001 /* AttachmentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentPreview.swift; sourceTree = "<group>"; };
+		1A00001F2C00000000000001 /* LiquidGlassChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassChrome.swift; sourceTree = "<group>"; };
+		1A0000232C00000000000001 /* RenderCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderCache.swift; sourceTree = "<group>"; };
+		1A0000B12C00000000000001 /* MarkdownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownParser.swift; sourceTree = "<group>"; };
+		1A0000B22C00000000000001 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		1A0000B32C00000000000001 /* MessageShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageShareCard.swift; sourceTree = "<group>"; };
+		1A0000B42C00000000000001 /* WebDAVClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDAVClient.swift; sourceTree = "<group>"; };
+		1A0000B52C00000000000001 /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupService.swift; sourceTree = "<group>"; };
+		1A0000B62C00000000000001 /* BackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupView.swift; sourceTree = "<group>"; };
+		1A0000B72C00000000000001 /* StorageUsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUsageService.swift; sourceTree = "<group>"; };
+		1A0000B82C00000000000001 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		1A0000D12C00000000000001 /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
+		1A0000D22C00000000000001 /* AssistantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantStore.swift; sourceTree = "<group>"; };
+		1A0000D32C00000000000001 /* AssistantImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantImageStore.swift; sourceTree = "<group>"; };
+		1A0000D42C00000000000001 /* PromptKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptKit.swift; sourceTree = "<group>"; };
+		1A0000D52C00000000000001 /* AssistantAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAvatarView.swift; sourceTree = "<group>"; };
+		1A0000D62C00000000000001 /* AssistantPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPickerSheet.swift; sourceTree = "<group>"; };
+		1A0000D72C00000000000001 /* AssistantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantListView.swift; sourceTree = "<group>"; };
+		1A0000D82C00000000000001 /* AssistantEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantEditView.swift; sourceTree = "<group>"; };
+		1A0000D92C00000000000001 /* AssistantBasicTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantBasicTab.swift; sourceTree = "<group>"; };
+		1A0000DA2C00000000000001 /* AssistantPickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPickers.swift; sourceTree = "<group>"; };
+		1A0000DB2C00000000000001 /* AssistantPromptTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPromptTab.swift; sourceTree = "<group>"; };
+		1A0000DC2C00000000000001 /* FlowWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowWrap.swift; sourceTree = "<group>"; };
+		1A0000DD2C00000000000001 /* AssistantMemoryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMemoryTab.swift; sourceTree = "<group>"; };
+		1A0000DE2C00000000000001 /* AssistantRegexTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantRegexTab.swift; sourceTree = "<group>"; };
+		1A0000DF2C00000000000001 /* AssistantQuickPhraseTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantQuickPhraseTab.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000202C00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000302C00000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1A0000312C00000000000001 /* AIChatApp */,
+				1A0000322C00000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000312C00000000000001 /* AIChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000112C00000000000001 /* AIChatAppApp.swift */,
+				1A0000122C00000000000001 /* ContentView.swift */,
+				1A0000402C00000000000001 /* Models */,
+				1A0000412C00000000000001 /* Services */,
+				1A0000422C00000000000001 /* ViewModels */,
+				1A0000432C00000000000001 /* Views */,
+				1A00001B2C00000000000001 /* Assets.xcassets */,
+				1A00001C2C00000000000001 /* Info.plist */,
+			);
+			path = AIChatApp;
+			sourceTree = "<group>";
+		};
+		1A0000322C00000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000102C00000000000001 /* Sonetto Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000402C00000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000132C00000000000001 /* ChatMessage.swift */,
+				1A0000D12C00000000000001 /* Assistant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A0000412C00000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000142C00000000000001 /* SettingsStore.swift */,
+				1A0000152C00000000000001 /* KeychainStore.swift */,
+				1A0000162C00000000000001 /* OpenAIClient.swift */,
+				1A00001D2C00000000000001 /* AttachmentStore.swift */,
+				1A0000232C00000000000001 /* RenderCache.swift */,
+				1A0000B12C00000000000001 /* MarkdownParser.swift */,
+				1A0000B42C00000000000001 /* WebDAVClient.swift */,
+				1A0000B52C00000000000001 /* BackupService.swift */,
+				1A0000B72C00000000000001 /* StorageUsageService.swift */,
+				1A0000D22C00000000000001 /* AssistantStore.swift */,
+				1A0000D32C00000000000001 /* AssistantImageStore.swift */,
+				1A0000D42C00000000000001 /* PromptKit.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A0000422C00000000000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000172C00000000000001 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A0000432C00000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000182C00000000000001 /* ChatView.swift */,
+				1A0000192C00000000000001 /* MessageBubble.swift */,
+				1A0000B22C00000000000001 /* MarkdownView.swift */,
+				1A0000B32C00000000000001 /* MessageShareCard.swift */,
+				1A0000B62C00000000000001 /* BackupView.swift */,
+				1A0000B82C00000000000001 /* StorageView.swift */,
+				1A00001A2C00000000000099 /* MessageEditSheet.swift */,
+				1A00001A2C00000000000001 /* SettingsView.swift */,
+				1A00001E2C00000000000001 /* AttachmentPreview.swift */,
+				1A00001F2C00000000000001 /* LiquidGlassChrome.swift */,
+				1A0000E02C00000000000001 /* Assistant */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A0000E02C00000000000001 /* Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000D52C00000000000001 /* AssistantAvatarView.swift */,
+				1A0000D62C00000000000001 /* AssistantPickerSheet.swift */,
+				1A0000D72C00000000000001 /* AssistantListView.swift */,
+				1A0000D82C00000000000001 /* AssistantEditView.swift */,
+				1A0000D92C00000000000001 /* AssistantBasicTab.swift */,
+				1A0000DA2C00000000000001 /* AssistantPickers.swift */,
+				1A0000DB2C00000000000001 /* AssistantPromptTab.swift */,
+				1A0000DC2C00000000000001 /* FlowWrap.swift */,
+				1A0000DD2C00000000000001 /* AssistantMemoryTab.swift */,
+				1A0000DE2C00000000000001 /* AssistantRegexTab.swift */,
+				1A0000DF2C00000000000001 /* AssistantQuickPhraseTab.swift */,
+			);
+			path = Assistant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000502C00000000000001 /* Sonetto Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000602C00000000000001 /* Build configuration list for PBXNativeTarget "Sonetto Chat" */;
+			buildPhases = (
+				1A0000212C00000000000001 /* Sources */,
+				1A0000202C00000000000001 /* Frameworks */,
+				1A0000222C00000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sonetto Chat";
+			productName = AIChatApp;
+			productReference = 1A0000102C00000000000001 /* Sonetto Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000702C00000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					1A0000502C00000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000712C00000000000001 /* Build configuration list for PBXProject "Sonetto Chat" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 1A0000302C00000000000001;
+			productRefGroup = 1A0000322C00000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000502C00000000000001 /* Sonetto Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000222C00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A00000B2C00000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000212C00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000012C00000000000001 /* AIChatAppApp.swift in Sources */,
+				1A0000022C00000000000001 /* ContentView.swift in Sources */,
+				1A0000032C00000000000001 /* ChatMessage.swift in Sources */,
+				1A0000042C00000000000001 /* SettingsStore.swift in Sources */,
+				1A0000052C00000000000001 /* KeychainStore.swift in Sources */,
+				1A0000062C00000000000001 /* OpenAIClient.swift in Sources */,
+				1A0000072C00000000000001 /* ChatViewModel.swift in Sources */,
+				1A0000082C00000000000001 /* ChatView.swift in Sources */,
+				1A0000092C00000000000001 /* MessageBubble.swift in Sources */,
+				1A00000A2C00000000000099 /* MessageEditSheet.swift in Sources */,
+				1A00000A2C00000000000001 /* SettingsView.swift in Sources */,
+				1A00000C2C00000000000001 /* AttachmentStore.swift in Sources */,
+				1A00000D2C00000000000001 /* AttachmentPreview.swift in Sources */,
+				1A00000E2C00000000000001 /* LiquidGlassChrome.swift in Sources */,
+				1A00000F2C00000000000001 /* RenderCache.swift in Sources */,
+				1A0000A12C00000000000001 /* MarkdownParser.swift in Sources */,
+				1A0000A22C00000000000001 /* MarkdownView.swift in Sources */,
+				1A0000A32C00000000000001 /* MessageShareCard.swift in Sources */,
+				1A0000A42C00000000000001 /* WebDAVClient.swift in Sources */,
+				1A0000A52C00000000000001 /* BackupService.swift in Sources */,
+				1A0000A62C00000000000001 /* BackupView.swift in Sources */,
+				1A0000A72C00000000000001 /* StorageUsageService.swift in Sources */,
+				1A0000A82C00000000000001 /* StorageView.swift in Sources */,
+				1A0000C12C00000000000001 /* Assistant.swift in Sources */,
+				1A0000C22C00000000000001 /* AssistantStore.swift in Sources */,
+				1A0000C32C00000000000001 /* AssistantImageStore.swift in Sources */,
+				1A0000C42C00000000000001 /* PromptKit.swift in Sources */,
+				1A0000C52C00000000000001 /* AssistantAvatarView.swift in Sources */,
+				1A0000C62C00000000000001 /* AssistantPickerSheet.swift in Sources */,
+				1A0000C72C00000000000001 /* AssistantListView.swift in Sources */,
+				1A0000C82C00000000000001 /* AssistantEditView.swift in Sources */,
+				1A0000C92C00000000000001 /* AssistantBasicTab.swift in Sources */,
+				1A0000CA2C00000000000001 /* AssistantPickers.swift in Sources */,
+				1A0000CB2C00000000000001 /* AssistantPromptTab.swift in Sources */,
+				1A0000CC2C00000000000001 /* FlowWrap.swift in Sources */,
+				1A0000CD2C00000000000001 /* AssistantMemoryTab.swift in Sources */,
+				1A0000CE2C00000000000001 /* AssistantRegexTab.swift in Sources */,
+				1A0000CF2C00000000000001 /* AssistantQuickPhraseTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000802C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000812C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0000822C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JHMR5P34R;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AIChatApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sonnetai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A0000832C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JHMR5P34R;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AIChatApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sonnetai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000602C00000000000001 /* Build configuration list for PBXNativeTarget "Sonetto Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000822C00000000000001 /* Debug */,
+				1A0000832C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000712C00000000000001 /* Build configuration list for PBXProject "Sonetto Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000802C00000000000001 /* Debug */,
+				1A0000812C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000702C00000000000001 /* Project object */;
+}

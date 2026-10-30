@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+
+# Xcode 构建产物
+build/
+DerivedData/
+.deriveddata/
+.build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcscmblueprint
+timeline.xctimeline
+playground.xcworkspace
+.swiftpm/
+
+# 本地 AI 工具配置（可能含本机绝对路径，不提交）
+.claude/settings.local.json
+CLAUDE.local.md
+AGENTS.local.md
+
+# 临时文件
+*.log
+*.tmp
